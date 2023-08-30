@@ -42,7 +42,7 @@ const axesHelper = new THREE.AxesHelper(100)
 scene.add(axesHelper)
 
 // 光照
-const light = new THREE.PointLight(0xffff00, 1.0);
+const light = new THREE.PointLight(0xffffff, 1.0);
 light.position.set(100, 100, 100);
 scene.add(light); //点光源添加到场景中
 

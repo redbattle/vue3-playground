@@ -18,9 +18,15 @@ export default defineConfig({
     },
   },
   server: {
+    host: '0.0.0.0',
     proxy: {
       // 跨域代理
-      '/weather': 'https://restapi.amap.com/v3',
+      // '/weather': 'https://restapi.amap.com/v3',
+      '/api': {
+        target: 'https://restapi.amap.com/v3',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ''),
+      },
     },
   },
 })

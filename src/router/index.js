@@ -15,6 +15,10 @@ const router = createRouter({
       path: '/threejs',
       component: import('@/views/three-js.vue'),
     },
+    {
+      path: '/calendar',
+      component: import('@/views/calendar.vue'),
+    }
   ],
 })
 
