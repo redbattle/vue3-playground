@@ -29,11 +29,10 @@ export default {
     }
   },
   methods: {
+    // 获取天气数据
     getWeatherInfo() {
-      getWeather({
-        city: 420000,
-        key: '',
-      })
+      getWeather
+      
     },
   },
 }
